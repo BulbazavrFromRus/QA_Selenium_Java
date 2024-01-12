@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,5 +31,7 @@ public class Registration extends Data{
                 driver.findElement(inputUsername).sendKeys(getDate.userName);
                 driver.findElement(inputPassword).sendKeys(getDate.password);
                 driver.findElement(buttonJoin).click();
+
+                driver.quit();
             }
 }
